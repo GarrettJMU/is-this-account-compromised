@@ -20,8 +20,8 @@
       <tr>
         <td><%= account.address %></td>
         <td ><%= account.weighted_score %></td>
-        <td><%= account.weighted_score %></td>
-        <td><%= account.weighted_score %></td>
+        <td><a href="/upvote/<%= account.id %>"> 👍️</a></td>
+        <td><a href="/downvote/<%= account.id %>">👎</a></td>
         <td><%= link_to 'Show', account %></td>
       </tr>
     <% end %>
