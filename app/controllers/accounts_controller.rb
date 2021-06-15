@@ -3,6 +3,7 @@ class AccountsController < ApplicationController
 
   # GET /accounts or /accounts.json
   def index
+    ## TODO add in sort by votes DESC
     @accounts = Account.all
   end
 
