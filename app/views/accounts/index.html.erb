@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="text-align: center">Compromised Accounts</h1>
+<h2 style="text-align: center">This is a simple, open source project that was inspired by FVCKRENDER's recent hack.</h2>
+
+<div style="text-align: center">
+  <table>
+    <thead>
+    <tr>
+      <th>Address:</th>
+      <th colspan="3"></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @accounts.each do |account| %>
+      <tr>
+        <td><%= account.address %></td>
+        <td><%= link_to 'Show', account %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+<br>
+
+<%= link_to 'New Compromised Account', new_account_path %>
