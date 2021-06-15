@@ -80,7 +80,11 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    digest-sha3 (1.1.0)
     erubi (1.10.0)
+    ethereum.rb (2.5)
+      activesupport (>= 4.0)
+      digest-sha3 (~> 1.1)
     execjs (2.8.1)
     ffi (1.15.1)
     globalid (0.4.2)
@@ -214,6 +218,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.4.1)
   byebug
   capybara (>= 2.15)
+  ethereum.rb
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.2)

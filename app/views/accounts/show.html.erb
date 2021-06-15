@@ -1,11 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @account.address %>
-</p>
-<p>
-  <strong>Date added:</strong>
-  <%= @account.created_at %>
-</p>
-<%= link_to 'Back', accounts_path %>
+<p id="notice" class="alert alert-success"><%= notice %></p>
+<div style="max-width: 80vw; margin: 0 auto;">
+  <div class="jumbotron" style="margin-top: 64px; padding: 24px;">
+    <h2><strong>Address:</strong>
+      <%= @account.address %>
+    </h2>
+    <p>
+      <strong>Date added:</strong>
+      <%= @account.created_at %>
+    </p>
+    <a href="<%= "https://etherscan.io/address/#{@account.address}" %>" target="_blank"> View on Etherscan</a>
+    <br/>
+    <br/>
+    <%= link_to 'Back', accounts_path, class: "btn btn-primary" %>
+  </div>
+</div>
